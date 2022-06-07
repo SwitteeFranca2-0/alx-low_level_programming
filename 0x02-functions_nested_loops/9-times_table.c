@@ -1,19 +1,5 @@
 #include "main.h"
 
-/**
- * main - calling in the times_table function.
- * Return: Always 0.
- */
-int main(void)
-{
-	times_table();
-	return (0);
-}
-
-/**
- * times_table - prints the 9 times table
- * Return: no return value.
- */
 void times_table(void)
 {
 	int n;
@@ -27,12 +13,12 @@ void times_table(void)
 			o = m * n;
 			if (o > 9)
 			{
-				putchar(o / 10 + '0');
-				putchar(o % 10 + '0');
+				_putchar(o / 10 + '0');
+				_putchar(o % 10 + '0');
 			}
 			else
 			{
-				putchar(o + '0');
+				_putchar(o + '0');
 			}
 			if (m == 9)
 			{
@@ -40,9 +26,9 @@ void times_table(void)
 			}
 			else
 			{
-				putchar(',');
+				_putchar(',');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
