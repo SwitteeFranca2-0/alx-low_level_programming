@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * times_table - print out th etime table.
+ * Return: no return value
+ */
 void times_table(void)
 {
 	int n;
@@ -27,6 +31,7 @@ void times_table(void)
 			else
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
