@@ -14,13 +14,13 @@ int main(void)
 
 	f1 = 1;
 	f2 = 2;
-	sums = f1 + f2;
+	sums = f2;
 	for (n = 2; n < 50; n++)
 	{
 		sum = f1 + f2;
 		f1 = f2;
 		f2 = sum;
-		if (sum < 4000000)
+		if ((sum < 4000000) && (sum % 2 == 0))
 		{
 			sums = sums + sum;
 		}
