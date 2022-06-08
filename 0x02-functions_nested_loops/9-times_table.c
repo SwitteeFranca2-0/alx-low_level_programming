@@ -24,19 +24,13 @@ void times_table(void)
 			}
 			else
 			{
+				if (m != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(o + '0');
-			}
-			if (m == 9)
-			{
-				continue;
-			}
-			else
-			{
-				if (o <= 9)
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-			}
 		}
 		_putchar('\n');
 	}
