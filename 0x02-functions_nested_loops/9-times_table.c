@@ -17,10 +17,10 @@ void times_table(void)
 			o = m * n;
 			if (o > 9)
 			{
-				_putchar(o / 10 + '0');
-				_putchar(o % 10 + '0');
 				_putchar(',');
 				_putchar(' ');
+				_putchar(o / 10 + '0');
+				_putchar(o % 10 + '0');
 			}
 			else
 			{
