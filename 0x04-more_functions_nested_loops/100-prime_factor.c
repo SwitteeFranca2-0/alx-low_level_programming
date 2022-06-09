@@ -20,7 +20,8 @@ int main(void)
 	{
 		if (n % num == 0)
 		{
-			max = n / num;
+			if (num > max)
+				max = num;
 		}
 	}
 	printf("%ld\n", max);
