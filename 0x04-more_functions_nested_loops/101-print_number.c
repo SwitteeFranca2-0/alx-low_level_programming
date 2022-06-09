@@ -18,6 +18,6 @@ void print_number(int n)
 	num /= 10;
 	if (num != 0)
 		print_number(num);
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar(n % 10 + '0');
 }
 
