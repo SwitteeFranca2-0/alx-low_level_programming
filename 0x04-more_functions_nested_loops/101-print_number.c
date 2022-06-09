@@ -2,12 +2,12 @@
 
 /**
  * print_number- print number
- * @n - parameter;
+ * @n: parameter;
  * Return: no return value.
  */
 void print_number(int n)
 {
-	int num;
+	unsigned int num;
 
 	num = n;
 	if (n < 0)
