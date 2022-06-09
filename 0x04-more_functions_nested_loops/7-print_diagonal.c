@@ -2,19 +2,6 @@
 #include <stdio.h>
 
 /**
- * main - atisfy a gven.
- * Return: whatever it returns, more 0.
- */
-int main(void)
-{
-	print_diagonal(0);
-	print_diagonal(2);
-	print_diagonal(10);
-	print_diagonal(-4);
-	return (0);
-}
-
-/**
  * print_diagonal - print diagonal
  * @n: parameter
  * Return: no return value
@@ -22,20 +9,19 @@ int main(void)
 void print_diagonal(int n)
 {
 	int m;
-
-	m = 1;
+	int o;
 
 	if (n > 0)
 	{
-		for (;m <= n; m++)
+		for (m = 1; m <= n; m++)
 		{
-			for (;m > 1; m--)
+			for (o = 1; o < m; o++)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
-			putchar('\\');
-			putchar('\n');
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
-	putchar('\n');	
+	_putchar('\n');
 }
