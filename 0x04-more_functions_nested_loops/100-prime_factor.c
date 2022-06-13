@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 #include <math.h>
 
 /**
@@ -8,7 +7,7 @@
  */
 int main(void)
 {
-	long int n;
+	long long int n;
 	long int max;
 	long int num;
 	double root;
@@ -19,10 +18,7 @@ int main(void)
 	for (num = 1; num <= root ; n++)
 	{
 		if (n % num == 0)
-		{
-			if (num > max)
-				max = num;
-		}
+			max = n / num;
 	}
 	printf("%ld\n", max);
 	return (0);
