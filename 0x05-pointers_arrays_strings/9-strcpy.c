@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * char _strcpy - strcpy.
+ * _strcpy - strcpy.
  * @dest: dest
  * @src: src
  * Return: dest.
