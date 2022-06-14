@@ -23,27 +23,18 @@ void rev_string(char *s)
 	char *x, m;
 
 	x = s;
-	for (i = 0;; i++)
-	{
-		if (s[i] == '\0')
-			break;
-	}
-	for (p = i; p >= 0; p--)
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	for (p = 1; p < i; p++)
 		x++;
-	for (o = 0; o < i; o++)
+	for (o = 0; o < i / 2; o++)
 	{
 		m = s[o];
-		x[o] = m;
-
+		s[o] = *x;
+		*x = m;
+		x--;
 	}
-	
-	
-
-
-
-		
-
-
 }
 
 
