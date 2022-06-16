@@ -7,18 +7,15 @@
  */
 void print_number(int n)
 {
-	int num;
 
 	if (n < 0)
 	{
 		putchar('-');
-		n = -n;
+		n = n * -1;
 	}
-	num = n;
-	num = num / 10;
 
-	if (num != 0)
-		print_number(num);
+	if (n / 10 != 0)
+		print_number(n / 10);
 	putchar(n % 10 + '0');
 }
 
