@@ -12,7 +12,6 @@ char *leet(char *c)
 
 	len = 5;
 	char a[5] = { 'A', 'E', 'O', 'T', 'L'};
-	char b[5] = {'a', 'e', 'o', 't', 'l'};
 	char d[5] = {'4', '3', '0', '7', '1'};
 
 	i = 0;
@@ -22,7 +21,7 @@ char *leet(char *c)
 		n = 0;
 		while (n < len)
 		{
-			if (c[i] == a[n] || c[i] == b[n])
+			if (c[i] == a[n] || c[i] - 32 == a[n])
 			{
 				c[i] = d[n];
 			}
