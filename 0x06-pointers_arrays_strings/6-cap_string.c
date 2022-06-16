@@ -19,7 +19,7 @@ char *cap_string(char *c)
 	}
 	while (c[i])
 	{
-		if (c[i] == 58 || c[i] == 59 || c[i] == 124 || c[i] == 123)
+		if (c[i] == 58 || c[i] == 59 || c[i] == 125 || c[i] == 123)
 		{
 			m = 1;
 		}
