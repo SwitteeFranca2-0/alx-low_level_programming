@@ -16,6 +16,7 @@ char *leet(char *c)
 	char d[5] = {'4', '3', '0', '7', '1'};
 
 	i = 0;
+	n = 0;
 	while (c[i])
 	{
 		n = 0;
