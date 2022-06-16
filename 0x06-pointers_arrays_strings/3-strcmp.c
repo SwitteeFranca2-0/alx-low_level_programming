@@ -19,16 +19,13 @@ int main(void)
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, k;
+	int i, k, m;
 
 	i = 0;
 	k = 0;
-	while (s1[i] && s2[i])
-	{
-		if (s1[i] != s2[i])
-			k = k + (s1[i] - s2[i]);
+	m = 0;
+	while (s1[i])
 		i++;
-	}
-	return (k);
+
 }
 
