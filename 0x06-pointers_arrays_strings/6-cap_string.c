@@ -7,11 +7,10 @@
  */
 char *cap_string(char *c)
 {
-	int i, a, m, n;
+	int i, a, m;
 
 	i = 0;
 	m = 0;
-	n = 0;
 	if (c[i] >= 97 && c[i] < 123)
 	{
 		a = c[i] - 97;
