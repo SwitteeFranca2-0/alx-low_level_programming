@@ -17,7 +17,8 @@ char *leet(char *c)
 
 	i = 0;
 	while (c[i])
-	{	n = 0;
+	{
+		n = 0;
 		while (n < len)
 		{
 			if (c[i] == a[n] || c[i] == b[n])
