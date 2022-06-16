@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	char str[] = "Expect-the>best. 123repare-for the worst. apitalize on what comes. \n hello world.";
+	char str[] = "Expect the best. Prepare for th eworst. apitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
 	char *ptr;
 
 	ptr = cap_string(str);
@@ -31,7 +31,7 @@ char *cap_string(char *c)
 		{
 			m = 1;	
 		}
-		else if (c[i] == 9 || (c[i] >= 32 && c[i] <= 47))
+		else if (c[i] == 9 || (c[i] >= 32 && c[i] <= 47) || c[i] == 10)
 		{
 			m = 1;
 		}

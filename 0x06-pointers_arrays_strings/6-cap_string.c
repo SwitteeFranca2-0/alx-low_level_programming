@@ -23,7 +23,7 @@ char *cap_string(char *c)
 		{
 			m = 1;
 		}
-		else if (c[i] == 9 || (c[i] >= 32 && c[i] <= 47))
+		else if (c[i] == 9 || (c[i] >= 32 && c[i] <= 47) || c[i] == 10)
 		{
 			m = 1;
 		}
