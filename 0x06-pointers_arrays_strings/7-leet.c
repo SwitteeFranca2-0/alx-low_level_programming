@@ -12,7 +12,7 @@ char *leet(char *c)
 
 	int len = 5;
 	char a[5] = { 'A', 'E', 'O', 'T', 'L'};
-	char b[5] = {'a', 'e', 'o', 't', 'l'}; 
+	char b[5] = {'a', 'e', 'o', 't', 'l'};
 	char d[5] = {'4', '3', '0', '7', '1'};
 
 	i = 0;
