@@ -13,7 +13,7 @@ unsigned int i, b, m;
 	i = 0;
 	m = 0;
 
-	while ((s[i] >= 97 && s[i] <= 122) || (s[i] >= 65 && s[i] <= 90) && s[i])
+	while (s[i] != 32)
 	{
 		for (b = 0; accept[b] != '\0'; b++)
 		{

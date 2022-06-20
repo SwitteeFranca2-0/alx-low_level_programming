@@ -15,6 +15,7 @@ void print_diagsum(int *a, int size)
 	sec_sum = 0;
 
 	for (b = 0; b < size; b++)
+	{
 		for (n = 0; n < size; n++)
 		{
 			if (b == n)
@@ -22,6 +23,7 @@ void print_diagsum(int *a, int size)
 			if (b + n == size - 1)
 				sec_sum += a[b][n];
 		}
+	}
 
 	printf("%d, %d\n", sum, sec_sum);
 }
