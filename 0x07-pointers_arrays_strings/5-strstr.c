@@ -1,26 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
-int main(void)
-{
-	char *s = "hello, world!";
-	char *f = "world";
-	char *t;
-
-	t = _strstr(s, f);
-	printf("%s\n", t);
-	return (0);
-
-}
-
-
+/**
+ * _strstr - string
+ * @haystack: hay
+ * @needle: need
+ * Return: choice.
+ */
 char *_strstr(char *haystack, char *needle)
 {
 	int i, m;
 
 	i = 0;
 	m = 0;
-	
+
 	while (haystack[i])
 	{
 		while (needle[m])
