@@ -19,7 +19,7 @@ void print_diagsum(int *a, int size)
 		for (n = 0; n < size; n++)
 		{
 			if (b == n)
-				sum += a[b][n];
+				sum += a[b][n]`;
 			if (b + n == size - 1)
 				sec_sum += a[b][n];
 		}

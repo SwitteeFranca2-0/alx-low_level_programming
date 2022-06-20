@@ -16,37 +16,25 @@ int main(void)
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int b;
-	int m;
+	int i, m;
 
-	i = 1;
-	b = 1;
+	i = 0;
 	m = 0;
 	
-
 	while (haystack[i])
 	{
-		if (haystack[i] = needle[i])
+		while (needle[m])
 		{
-			b++;
+			if (haystack[i + m] != needle[m])
+				break;
+			m++;
 		}
-		else
-		{
-			b--;
-		}
+		if (needle[m] == '\0')
+			return (haystack + i);
 		i++;
 	}
 
-	if (b == m)
-	{
-		haystack += 1;
-		return (haystack);
-	}
-	else
-	{
-		return ('\0');
-	}
+	return ('\0');
 }
 
 
