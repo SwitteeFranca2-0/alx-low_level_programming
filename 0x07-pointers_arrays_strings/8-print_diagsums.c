@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_diagsum - print
@@ -7,7 +8,7 @@
  * Return: none.
  */
 
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int b, n, sum, sec_sum;
 
