@@ -14,7 +14,7 @@ int _sqrt_recursion(int m)
 	return (_sqrt_recur(m, 1));
 }
 
-/**
+/**i
  * _sqrt_recur - sqrt.
  * @m: arg.
  * @q: arg.
@@ -28,8 +28,7 @@ int _sqrt_recur(int m, int q)
 
 	if (m == (q * q))
 		return (q);
-	q++;
-	_sqrt_recur(m, q);
+	return (_sqrt_recur(m, q + 1));
 }
 
 

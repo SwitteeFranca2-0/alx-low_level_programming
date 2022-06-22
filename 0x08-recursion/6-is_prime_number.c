@@ -26,7 +26,6 @@ int is_prime(int n, int m)
 		return (1);
 	if (n % m == 0 || n < 0)
 		return (0);
-	m++;
-	is_prime(n, m);
+	return (is_prime(n, m + 1));
 }
 
