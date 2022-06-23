@@ -24,7 +24,7 @@ int is_prime(int n, int m)
 {
 	if (m == (n / 2))
 		return (1);
-	if (n % m == 0 || n < 0)
+	if (n % m == 0 || n < 0 || n == 1)
 		return (0);
 	return (is_prime(n, m + 1));
 }
