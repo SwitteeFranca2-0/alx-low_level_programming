@@ -23,8 +23,10 @@ int is_palindrome(char *s)
 int is_pal(char *s, int i)
 {
 	if (s[i] == '\0')
+	{
 		i = i - 1;
 		return (is_pals(s, i, 0));
+	}
 	i++;
 	return (is_pal(s, i));
 }
