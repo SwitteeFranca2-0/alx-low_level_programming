@@ -1,8 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 int is_pal(char *s, int i);
 int is_pals(char *s, int i, int m);
 
+int main(void)
+{
+	int r;
+
+	r = is_palindrome("grep");
+	printf("%d\n", r);
+	return (0);
+}
 
 /**
  * is_palindrome - is or not?
@@ -14,12 +23,6 @@ int is_palindrome(char *s)
 	return (is_pal(s, 0));
 }
 
-/**
- * is_pal - is.
- * @s: s.
- * @i: i
- * Return: int.
- */
 int is_pal(char *s, int i)
 {
 	if (s[i] == '\0')
@@ -29,13 +32,6 @@ int is_pal(char *s, int i)
 	return (is_pal(s, i));
 }
 
-/**
- * is_pals - is.
- * @s: s.
- * @i: i.
- * @m: m.
- * Return: ion.
- */
 int is_pals(char *s, int i, int m)
 {
 	if (m > i / 2)
