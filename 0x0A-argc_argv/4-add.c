@@ -4,22 +4,22 @@
 #include <string.h>
 
 /**
- * main - printf.
- * @argc: arg.
- * @argv: arg.
- * Return: 0.
+ * main - main.
+ * @argc: argc.
+ * @argv: argv
+ * Return: number.
  */
+
 int main(int argc, char *argv[])
 {
-	int i, m, add = 0;
+	unsigned int i, m, sum = 0;
 	char *n;
 
 	if (argc == 1)
 		printf("0\n");
-
 	for (i = 1; i < argc; i++)
 	{
-		n = *(argv + i);
+		n = argv[i];
 
 		for (m = 0; m < strlen(n); m++)
 		{
@@ -30,10 +30,12 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		add += atoi(argv[i]);
+		sum += atoi(n);
+		n++;
 	}
-
-	printf("%d\n", add);
+	printf("%d\n", sum);
 
 	return (0);
 }
+
+
