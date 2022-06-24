@@ -11,17 +11,18 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int i, mul = 1;
+	unsigned int i, m, mul = 1;
 
 	if (argc < 3)
+	{
 		printf("Error");
-
-	for (i = 1; i < argc; i++)
-		mul = mul * atoi(argv[i]);
-
+		return (1);
+	}
+	m = atoi(argv[1]);
+	i = atoi(argv[2]);
+	mul = i * m;
 	printf("%d", mul);
 	printf("\n");
-
 	return (0);
 }
 
