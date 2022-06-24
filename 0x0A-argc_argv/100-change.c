@@ -10,7 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int n, m;
+	int m;
+	unsigned int n;
 
 	if (argc < 2 || argc > 2)
 	{
