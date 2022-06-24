@@ -26,21 +26,13 @@ int main(int argc, char *argv[])
 	{
 		m = 25;
 	}
-	else if (atoi(argv[1]) >= 10 && atoi(argv[1]) < 25)
+	else if (atoi(argv[1]) == 10)
 	{
 		m = 10;
 	}
-	else if (atoi(argv[1]) >= 5 && atoi(argv[1]) < 10)
+	else if (atoi(argv[1]) >= 5 && atoi(argv[1]) < 25)
 	{
 		m = 5;
-	}
-	else if (atoi(argv[1]) >= 2 && atoi(argv[1]) < 5)
-	{
-		m = 2;
-	}
-	else
-	{
-			m = 1;
 	}
 	n = atoi(argv[1]) / m;
 	if (atoi(argv[1]) % m)
