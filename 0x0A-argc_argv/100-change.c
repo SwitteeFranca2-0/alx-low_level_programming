@@ -17,11 +17,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
 	if (atoi(argv[1]) >= 25)
 	{
 		m = 25;
@@ -34,10 +29,25 @@ int main(int argc, char *argv[])
 	{
 		m = 5;
 	}
-	n = atoi(argv[1]) / m;
-	if (atoi(argv[1]) % m)
-		n = atoi(argv[1]) / m + 1;
-	printf("%d\n", n);
+	else if (atoi(argv[1]) >= 2 && atoi(argv[1]) <= 5)
+	{
+		m = 2;
+	}
+	else
+	{
+		m = 1;
+	}
+	if (atoi(argv[1]) > 0)
+	{
+		n = atoi(argv[1]) / m;
+		if (atoi(argv[1]) % m)
+			n = atoi(argv[1]) / m + 1;
+		printf("%d\n", n);
+	}
+	else
+	{
+		printf("0\n");
+	}
 	return (0);
 }
 
