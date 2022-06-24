@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	long int i, m, mul = 1;
+	unsigned int i, m, mul = 1;
 
 	if (argc != 3)
 	{
