@@ -13,10 +13,10 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	long int m, sum = 0;
+	unsigned int m, sum = 0;
 	char *n;
 
-	if (argc == 1)
+	if (argc < 1)
 		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
