@@ -8,47 +8,50 @@
  * @argv: array.
  * Return: 0.
  */
+
 int main(int argc, char *argv[])
 {
-	int m;
-	unsigned int n;
+	int m, n, c, d, a[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) >= 25)
-	{
-		m = 25;
-	}
-	else if (atoi(argv[1]) == 10)
-	{
-		m = 10;
-	}
-	else if (atoi(argv[1]) >= 5 && atoi(argv[1]) < 25)
-	{
-		m = 5;
-	}
-	else if (atoi(argv[1]) >= 2 && atoi(argv[1]) <= 5)
-	{
-		m = 2;
-	}
-	else
-	{
-		m = 1;
-	}
 	if (atoi(argv[1]) > 0)
 	{
-		n = atoi(argv[1]) / m;
-		if (atoi(argv[1]) % m)
-			n = atoi(argv[1]) / m + 1;
-		printf("%d\n", n);
+		n = 0;
+		while (a[n])
+		{
+			if (atoi(argv[1]) >= a[n])
+			{
+				break;
+			}
+			n++;
+		}
+		m = a[n];
+		d = atoi(argv[1]);
+		c = d / m;
+		while (d % m)
+		{	
+			n = 0;
+			d = d % m;
+			while (a[n])
+			{
+				if (d >= a[n])
+				{
+					m = a[n];
+					break;
+				}
+				n++;
+			}
+			c += d / m;
+		}
+		printf("%d\n", c);
 	}
-	else
+	else 
 	{
 		printf("0\n");
 	}
-	return (0);
+		return (0);					
 }
-
