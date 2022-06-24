@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int m, n, c, d, a[5] = {25, 10, 5, 2, 1};
+	int m, n = 0, c, d, a[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 	}
 	if (atoi(argv[1]) > 0)
 	{
-		n = 0;
 		while (a[n])
 		{
 			if (atoi(argv[1]) >= a[n])
@@ -29,13 +28,11 @@ int main(int argc, char *argv[])
 			}
 			n++;
 		}
-		m = a[n];
-		d = atoi(argv[1]);
+		m = a[n], d = atoi(argv[1]);
 		c = d / m;
 		while (d % m)
-		{	
-			n = 0;
-			d = d % m;
+		{
+			n = 0, d = d % m;
 			while (a[n])
 			{
 				if (d >= a[n])
@@ -49,9 +46,9 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", c);
 	}
-	else 
+	else
 	{
 		printf("0\n");
 	}
-		return (0);					
+		return (0);
 }
