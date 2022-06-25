@@ -1,1 +1,1 @@
-more pointers
+static libaries
