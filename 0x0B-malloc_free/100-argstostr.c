@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * argstostr - to string.
@@ -8,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, m, k, b, n, r, t;
+	int i, m, k, b, n;
 	char *e;
 	char *p;
 
