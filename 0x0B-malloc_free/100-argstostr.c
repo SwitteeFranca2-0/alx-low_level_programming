@@ -29,7 +29,8 @@ char *argstostr(int ac, char **av)
 			b++;
 		}
 		p[b] = '\n';
-		b++;
+		if(n != ac - 1)
+			b++;
 	}
 
 	p[b] = '\0';
