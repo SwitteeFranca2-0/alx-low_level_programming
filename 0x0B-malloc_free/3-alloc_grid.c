@@ -27,6 +27,11 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		p[i] = malloc(sizeof(int *) * width);
+		if (a[i] == NULL)
+		{
+			for (n = i; n >= 0; n--)
+				free(a[n]);
+		}
 	}
 
 	for (m = 0; m < height; m++)
