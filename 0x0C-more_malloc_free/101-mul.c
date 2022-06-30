@@ -4,9 +4,9 @@
 
 void print_error(void);
 void digit_check(char *s);
-long int _strtoi(char *s);
-long long int _mul(long long int a, long long int b);
-
+unsigned int _strtoi(char *s);
+unsigned int _mul(unsigned int a, unsigned int b);
+void print_number(int n);
 /**
  * main - multiply two numbers from the argument.
  * @argc: number of arguments.
@@ -15,7 +15,7 @@ long long int _mul(long long int a, long long int b);
  */
 int main(int argc, char *argv[])
 {
-	long long int num1, num2, mul;
+	unsigned int num1, num2, mul;
 
 	if (argc != 3)
 	{
@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 
 	mul = _mul(num1, num2);
 
-
-	printf("%lld\n", mul);
+	print_number(mul);
+	__putchar('\n');
 	return (0);
 }
 
@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
  */
 void print_error(void)
 {
-	putchar('E');
-	putchar('r');
-	putchar('r');
-	putchar('o');
-	putchar('r');
-	putchar('\n');
+	__putchar('E');
+	__putchar('r');
+	__putchar('r');
+	__putchar('o');
+	_putchar('r');
+	_putchar('\n');
 }
 
 /**
@@ -74,10 +74,10 @@ void digit_check(char *s)
  * @s: string.
  * Return: integer.
  */
-long int _strtoi(char *s)
+unsigned int _strtoi(char *s)
 {
 	int k;
-	long long m;
+	unsigned int m;
 
 	m = 0;
 
@@ -97,10 +97,26 @@ long int _strtoi(char *s)
  * @b: argument.
  * Return: product of arguments.
  */
-long long int _mul(long long int a, long long int b)
+unsigned int _mul(unsigned int a, unsigned int b)
 {
-	long long int m;
+	unsigned int m;
 
 	m = a * b;
 	return (m);
+}
+
+/**
+ * print_number - print number.
+ * @n: argument.
+ * Return: none.
+ */
+void print_number(int n)
+{
+	unsigned int num;
+
+	num = n;
+	num /= 10;
+	if (num != 0)
+		print_number(num);
+	_putchar(n % 10 + '0');
 }
