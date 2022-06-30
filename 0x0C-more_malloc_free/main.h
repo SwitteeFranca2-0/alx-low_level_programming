@@ -7,5 +7,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void print_error(void);
 void digit_check(char *s);
 unsigned int _mul(unsigned int a, unsigned int b);
-void print_number(int n);
 unsigned int _strtoi(char *s);
+void print_number(int n);
