@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_error(void);
-void digit_check(char *s);
-unsigned int _strtoi(char *s);
-unsigned int _mul(unsigned int a, unsigned int b);
-void print_number(int n);
 /**
  * main - multiply two numbers from the argument.
  * @argc: number of arguments.

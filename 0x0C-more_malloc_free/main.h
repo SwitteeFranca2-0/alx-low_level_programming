@@ -4,3 +4,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void print_error(void);
+void digit_check(char *s);
+unsigned int _mul(unsigned int a, unsigned int b);
+void print_number(int n);
+unsigned int _strtoi(char *s);
