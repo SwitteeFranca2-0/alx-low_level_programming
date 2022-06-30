@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int num1, num2, mul;
+	long long int num1, num2, mul;
 	char er[5] = {'E', 'r', 'r', 'o', 'r'};
 
 	if (argc != 3)
@@ -62,10 +62,10 @@ void digit_check(char *s)
  * @s: string.
  * Return: integer.
  */
-unsigned int _strtoi(char *s)
+long long int _strtoi(char *s)
 {
 	int k;
-	unsigned int m;
+	long long int m;
 
 	m = 0;
 
@@ -85,9 +85,9 @@ unsigned int _strtoi(char *s)
  * @b: argument.
  * Return: product of arguments.
  */
-unsigned int _mul(unsigned int a, unsigned int b)
+long long int _mul(long long int a, long long int b)
 {
-	unsigned int m;
+	long long int m;
 
 	m = a * b;
 	return (m);
@@ -100,7 +100,7 @@ unsigned int _mul(unsigned int a, unsigned int b)
  */
 void print_number(int n)
 {
-	unsigned int num;
+	long long int num;
 
 	num = n;
 	num /= 10;
