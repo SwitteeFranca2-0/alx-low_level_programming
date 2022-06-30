@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	long num1, num2, mul;
+	unsigned int num1, num2, mul;
 	char er[5] = {'E', 'r', 'r', 'o', 'r'};
 
 	if (argc != 3)
