@@ -15,9 +15,7 @@ long long int _mul(long long int a, long long int b);
  */
 int main(int argc, char *argv[])
 {
-	long long int num1, num2, mul = 1;
-	long long int m, n;
-	char *e;
+	long long int num1, num2, mul;
 
 	if (argc != 3)
 	{
@@ -30,7 +28,7 @@ int main(int argc, char *argv[])
 
 	num1 = _strtoi(argv[1]);
 	num2 = _strtoi(argv[2]);
-	 
+
 	mul = _mul(num1, num2);
 
 
@@ -39,7 +37,7 @@ int main(int argc, char *argv[])
 }
 
 /**
- * print_error: print "error"
+ * print_error - print "error".
  * Return: none.
  */
 void print_error(void)
@@ -53,7 +51,7 @@ void print_error(void)
 }
 
 /**
- * error_check: check to makes sure only digts are in passed arguments.
+ * digit_check - check to makes sure only digts are in passed arguments..
  * @s: argument.
  * Return: none.
  */
@@ -61,7 +59,7 @@ void digit_check(char *s)
 {
 	int m;
 
-	for ( m = 0; s[m] != '\0'; m++)
+	for (m = 0; s[m] != '\0'; m++)
 	{
 		if (!(s[m] >= 48 && s[m] <= 57))
 		{
@@ -72,7 +70,7 @@ void digit_check(char *s)
 }
 
 /**
- * strtoi - convert string to integre.
+ * _strtoi - convert string to integre.
  * @s: string.
  * Return: integer.
  */
@@ -90,7 +88,6 @@ long int _strtoi(char *s)
 			m = m * 10 + s[k] - '0';
 		}
 	}
-	
 	return (m);
 }
 
