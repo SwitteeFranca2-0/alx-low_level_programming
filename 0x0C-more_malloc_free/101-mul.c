@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	mul = _mul(num1, num2);
 
 	print_number(mul);
-	__putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
@@ -37,10 +37,10 @@ int main(int argc, char *argv[])
  */
 void print_error(void)
 {
-	__putchar('E');
-	__putchar('r');
-	__putchar('r');
-	__putchar('o');
+	_putchar('E');
+	_putchar('r');
+	_putchar('r');
+	_putchar('o');
 	_putchar('r');
 	_putchar('\n');
 }
