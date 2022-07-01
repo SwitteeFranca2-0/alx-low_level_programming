@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned long long int num1, num2, mul;
+	unsigned long int num1, num2, mul;
 	char er[5] = {'E', 'r', 'r', 'o', 'r'};
 
 	if (argc != 3)
@@ -85,9 +85,9 @@ unsigned int _strtoi(char *s)
  * @b: argument.
  * Return: product of arguments.
  */
-unsigned long long int _mul(unsigned long long int a, unsigned long long int b)
+unsigned long int _mul(unsigned long int a, unsigned long int b)
 {
-	unsigned long long int m;
+	unsigned long int m;
 
 	m = a * b;
 	return (m);
@@ -98,9 +98,9 @@ unsigned long long int _mul(unsigned long long int a, unsigned long long int b)
  * @n: argument.
  * Return: none.
  */
-void print_number(unsigned long long int n)
+void print_number(unsigned long int n)
 {
-	unsigned long long int num;
+	unsigned long int num;
 
 	num = n;
 	num /= 10;
