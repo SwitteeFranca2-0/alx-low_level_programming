@@ -10,15 +10,15 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned long int num1, num2, mul;
 	int i;
-
+	unsigned int num1, num2, mul;
 	char er[5] = {'E', 'r', 'r', 'o', 'r'};
+
 	if (argc != 3)
 	{
 		for (i = 0; i < 5; i++)
-			putchar(er[i]);
-		putchar('\n');
+			_putchar(er[i]);
+		_putchar('\n');
 		exit(98);
 	}
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	mul = _mul(num1, num2);
 
 	print_number(mul);
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
@@ -50,8 +50,8 @@ void digit_check(char *s)
 		if (!(s[m] >= 48 && s[m] <= 57))
 		{
 			for (i = 0; i < 5; i++)
-				putchar(err[i]);
-			putchar('\n');
+				_putchar(err[i]);
+			_putchar('\n');
 			exit(98);
 		}
 	}
@@ -85,9 +85,9 @@ unsigned int _strtoi(char *s)
  * @b: argument.
  * Return: product of arguments.
  */
-unsigned long int _mul(unsigned long int a, unsigned long int b)
+unsigned int _mul(unsigned int a, unsigned int b)
 {
-	unsigned long int m;
+	unsigned int m;
 
 	m = a * b;
 	return (m);
@@ -98,13 +98,13 @@ unsigned long int _mul(unsigned long int a, unsigned long int b)
  * @n: argument.
  * Return: none.
  */
-void print_number(unsigned long int n)
+void print_number(int n)
 {
-	unsigned long int num;
+	unsigned int num;
 
 	num = n;
 	num /= 10;
 	if (num != 0)
 		print_number(num);
-	putchar(n % 10 + '0');
+	_putchar(n % 10 + '0');
 }

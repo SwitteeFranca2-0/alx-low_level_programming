@@ -6,6 +6,6 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void print_error(void);
 void digit_check(char *s);
-unsigned int _mul(unsigned int a, unsigned int b);
+unsigned long int _mul(unsigned long int a, unsigned long int b);
 unsigned int _strtoi(char *s);
-void print_number(int n);
+void print_number(unsigned long int n);
