@@ -6,18 +6,15 @@
  * @array: array.
  * @size: size of array.
  * @action: function pointer.
+ * Return: none.
  */
 void array_iterator(int *array, size_t size, void(*action)(int))
 {
 	unsigned int i;
 
-	i = 0;
 	if (array != NULL && size > 0 && action != NULL)
 	{
-		while (i < size)
-		{
+		for (i = 0; i < size; i++)
 			action(array[i]);
-			i++;
-		}
 	}
 }
