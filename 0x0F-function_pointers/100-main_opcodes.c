@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < m; i++)
 	{
-		printf("%.2x", o[i] & 0xFF);
+		printf("%.2x", o[i]);
 		if (i < (m - 1))
 			printf(" ");
 	}
