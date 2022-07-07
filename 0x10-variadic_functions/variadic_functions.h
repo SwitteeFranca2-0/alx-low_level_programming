@@ -14,4 +14,5 @@ typedef struct funcs
 	char *type;
 	void (*f)(char *separator, va_list args);
 } func;
+int _putchar(char c);
 #endif
