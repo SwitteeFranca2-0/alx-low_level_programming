@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 void print_char(char *separator, va_list args);
