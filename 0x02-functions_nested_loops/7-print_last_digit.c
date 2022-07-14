@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_last_digit - pints last digits..
@@ -15,6 +16,6 @@ int print_last_digit(int n)
 	}
 
 	m = n % 10;
-	_putchar(m + '0');
+	putchar(m + '0');
 	return (m);
 }
