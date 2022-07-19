@@ -37,12 +37,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			{
 				p->next = (h)->next;
 				(h)->next = p;
-				return (*head);
+				break;
 			}
 			h = (h)->next;
 		}
 	}
 
-	return (NULL);
+	return (*head);
 
 }
