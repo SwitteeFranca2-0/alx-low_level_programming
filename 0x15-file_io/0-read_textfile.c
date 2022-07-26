@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	xfile = write(STDOUT_FILENO, buffer, c);
-	if (xfile != c)
+	if (xfile != c || xfile == -1)
 	{
 		return (0);
 	}
