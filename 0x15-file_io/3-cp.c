@@ -53,13 +53,13 @@ int main(int argc, char *argv[])
 	cfile = close(file);
 	if (cfile == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
 		exit(100);
 	}
 	cfile = close(yfile);
 	if (cfile == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", yfile);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", yfile);
 		exit(100);
 	}
 	return (0);
