@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		xfile = read(file, buffer, 1024);
 		if (xfile == -1)
 			Err_message(argv[1], 98);
-		zfile = write(yfile, buffer, 1024);
+		zfile = write(yfile, buffer, xfile);
 		if (zfile == -1)
 			Err_message(argv[2], 99);
 	}
