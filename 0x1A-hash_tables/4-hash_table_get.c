@@ -17,7 +17,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (key == NULL || strlen(key) == 0 || ht == NULL)
 		return (NULL);
 
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 
 	while (tmp != NULL)
@@ -27,5 +27,4 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 
 	return (NULL);
-
 }
