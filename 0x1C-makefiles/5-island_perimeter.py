@@ -4,6 +4,7 @@
 """
 
 def island_perimeter(grid):
+    """This finds the perimeter of the island""" 
     length = 0
     width = 0
     z_p = 0
@@ -25,5 +26,5 @@ def island_perimeter(grid):
         length += 1
     
     
-    return (length * width)
+    return length * width
     
