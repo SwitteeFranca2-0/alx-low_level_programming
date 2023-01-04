@@ -32,6 +32,6 @@ int interpolation_search(int *arr, size_t size, int key)
 
 	if (key == arr[low])
 		return (low);
-	else
-		return (-1);
+	printf("Value checked [%ld] is out of range\n", pos);
+	return (-1);
 }
