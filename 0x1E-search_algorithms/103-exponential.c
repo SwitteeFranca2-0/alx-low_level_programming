@@ -26,9 +26,10 @@ int exponential_search(int *array, size_t size, int value)
 		bound *= 2;
 	}
 
-	printf("Value found between indexes [%d] and [%d]\n", i, min(size - 1, bound));
+	printf("Value found between indexes [%d] and [%d]\n", i,
+	min(size - 1, bound));
 
-	return (d_binary_search(array, value, bound / 2, min(bound + 1, size - 1)));
+	return (d_binary_search(array, value, bound / 2, min(bound, size - 1)));
 }
 
 /**
