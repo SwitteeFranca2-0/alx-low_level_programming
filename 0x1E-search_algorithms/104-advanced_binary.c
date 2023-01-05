@@ -13,36 +13,10 @@ int search(int *array, size_t size, int value, size_t b, size_t e);
 */
 int advanced_binary(int *array, size_t size, int value)
 {
-	size_t b = 0,  e = size - 1, c = 0, r;
-
 	if (!(array))
 		return (-1);
 
-	c = (b + e) / 2;
-
-	printf("Searching in array: ");
-	for (r = 0;  r < size - 1; r++)
-		printf("%d, ", array[r]);
-	printf("%d\n", array[r]);
-
-	if (array[c] == value)
-	{
-		if (array[c - 1] == value)
-			return (search(array, size, value, b, c));
-		return (c);
-	}
-	else if (array[c] < value)
-	{
-		b = c + 1;
-		return (search(array, size, value, b, e));
-	}
-	else
-	{
-		e = c - 1;
-		return (search(array, size, value, b, e));
-	}
-
-	return (-1);
+	return (search(array, size, value, 0, size - 1));
 }
 
 
@@ -70,6 +44,8 @@ int search(int *array, size_t size, int value, size_t b, size_t e)
 		c = (b + e) / 2;
 		if (array[c] == value)
 		{
+			if (array[c - 1] == value)
+				return (search(array, size, value, b, c));
 			return (c);
 		}
 		else if (array[c] < value)
