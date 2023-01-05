@@ -34,6 +34,9 @@ int search(int *array, size_t size, int value, size_t b, size_t e)
 
 	size_t c = 0;
 
+	if (e < b)
+		return (-1);
+
 	if (b <= e)
 	{
 		printf("Searching in array: ");
